@@ -1,0 +1,10 @@
+.color-circle {
+  --color-circle__bg-color: var(--white-color);
+  --color-circle__border-color: var(--stroke-color);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-circle__bg-color);
+  border: 1px solid var(--color-circle__border-color);
+  border-radius: 50%;
+}

@@ -1,0 +1,16 @@
+.el-drawer {
+  --el-drawer-header-padding: var(--space-4) 0;
+  --el-drawer-body-padding: 0;
+  --el-drawer-footer-padding: var(--space-6) 0 var(--space-3);
+  &__header {
+    margin-bottom: var(--space-6);
+    padding: var(--el-drawer-header-padding);
+  }
+  &__body {
+    padding: var(--el-drawer-body-padding);
+  }
+  &__footer{
+    padding: var(--el-drawer-footer-padding);
+
+  }
+}

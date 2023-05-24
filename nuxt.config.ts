@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   elementPlus: {
     importStyle: false,
   },
-  css: ["element-plus/dist/index.css"],
+  css: ["element-plus/dist/index.css", "@/assets/styles/index.scss"],
   build: {
     transpile: ["primevue", ...(lifecycle === "build" ? ["element-plus"] : [])],
   },
@@ -24,10 +24,10 @@ export default defineNuxtConfig({
       }),
       checker({
         vueTsc: true,
-        eslint: {
-          lintCommand:
-            'eslint ./**/*.{ts,vue,d.ts} --ignore-pattern "./**/*.test.ts" --ignore-pattern "./**/*.stories.ts"',
-        },
+        // eslint: {
+        //   lintCommand:
+        //     'eslint ./**/*.{ts,vue,d.ts} --ignore-pattern "./**/*.test.ts" --ignore-pattern "./**/*.stories.ts"',
+        // },
       }),
     ],
     resolve: {

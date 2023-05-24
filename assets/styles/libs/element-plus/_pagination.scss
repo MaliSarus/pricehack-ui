@@ -1,0 +1,95 @@
+.el-pagination {
+  --el-pagination-font-size: var(--btn-m__font-size);
+  --el-pagination-bg-color: rgba(var(--white-color--rgb), 0);
+  --el-pagination-text-color: var(--accent1-primary-color);
+  --el-pagination-border-radius: var(--buttons-big-radius);
+  --el-pagination-button-color: var(--accent1-primary-color);
+  --el-pagination-button-width: 40px;
+  --el-pagination-button-height: 40px;
+  --el-pagination-button-disabled-color: var(--disabled-text-color);
+  --el-pagination-button-disabled-bg-color: var(--disabled-bg-color);
+  --el-pagination-button-bg-color: var(--accent1-quaternary-color);
+  --el-pagination-hover-color: var(--accent1-primary-color);
+  --el-pagination-font-size-small: var(--btn-s__font-size);
+  --el-pagination-button-width-small: 32px;
+  --el-pagination-button-height-small: 32px;
+  --el-pagination-item-gap: var(--space-3);
+  justify-content: center;
+  .btn-next,
+  .btn-prev {
+    .el-icon {
+      font-size: 24px;
+    }
+  }
+  button {
+    border: 1px solid rgba(var(--white-color--rgb), 0);
+  }
+  .el-pager {
+    li {
+      line-height: var(--btn-m__line-height);
+      font-weight: var(--btn-m__font-weight);
+      border: 1px solid rgba(var(--white-color--rgb), 0);
+
+      &.is-active {
+        font-weight: var(--btn-m__font-weight);
+      }
+    }
+  }
+
+  &.is-background {
+    .btn-next.is-disabled,
+    .btn-next:disabled,
+    .btn-prev.is-disabled,
+    .btn-prev:disabled,
+    .el-pager li.is-disabled,
+    .el-pager li:disabled {
+      color: var(--el-pagination-button-disabled-color);
+    }
+    .btn-next,
+    .btn-prev,
+    .el-pager li {
+      margin: 0 calc(var(--space-3) / 2);
+    }
+
+    .el-pager {
+      li {
+        background-color: rgba(var(--white-color--rgb), 0);
+
+        &:not(.is-disabled) {
+          &:focus-visible {
+            border-color: var(--text-primary-color);
+            outline: none;
+          }
+          &:hover {
+            background-color: var(--accent1-quaternary-color);
+            border-color: rgba(var(--white-color--rgb), 0);
+            color: var(--el-pagination-hover-color);
+          }
+        }
+      }
+    }
+    button {
+      &:focus-visible {
+        border-color: var(--text-primary-color);
+        outline: none;
+      }
+      &:hover {
+        background-color: var(--accent1-primary-color);
+        color: var(--white-color);
+        border-color: rgba(var(--white-color--rgb), 0);
+      }
+    }
+  }
+  &--small {
+    .el-pager li {
+      line-height: var(--btn-s__line-height);
+      font-weight: var(--btn-s__font-weight);
+    }
+    .btn-next,
+    .btn-prev {
+      .el-icon {
+        font-size: 16px;
+      }
+    }
+  }
+}

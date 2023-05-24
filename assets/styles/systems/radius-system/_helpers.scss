@@ -1,0 +1,63 @@
+:root {
+  @each $border-radius-type, $border-radius-subtype in $border-radius-system {
+    @each $subtype-key, $property in $border-radius-subtype {
+      --#{$border-radius-type}-#{$subtype-key}-radius: #{$property};
+    }
+  }
+}
+
+@each $border-radius-type, $border-radius-subtype in $border-radius-system {
+  @each $subtype-key, $property in $border-radius-subtype {
+    .border-radius--#{$border-radius-type}-#{$subtype-key} {
+      border-radius: var(--#{$border-radius-type}-#{$subtype-key}-radius);
+    }
+    .border-radius--#{$border-radius-type}-#{$subtype-key}-left {
+      border-top-left-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+      border-bottom-left-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+    }
+    .border-radius--#{$border-radius-type}-#{$subtype-key}-right {
+      border-top-right-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+      border-bottom-right-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+    }
+    .border-radius--#{$border-radius-type}-#{$subtype-key}-top {
+      border-top-left-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+      border-top-right-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+    }
+    .border-radius--#{$border-radius-type}-#{$subtype-key}-bottom {
+      border-bottom-left-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+      border-bottom-right-radius: var(
+        --#{$border-radius-type}-#{$subtype-key}-radius
+      );
+    }
+    .border-radius--zero-left {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .border-radius--zero-right {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .border-radius--zero-top {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .border-radius--zero-bottom {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

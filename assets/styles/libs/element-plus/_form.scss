@@ -1,0 +1,18 @@
+.el-form {
+  --el-form-label-font-size: var(--text-m-semibold__font-size);
+  &--default {
+    &.el-form {
+      &--label-top {
+        .el-form-item {
+          .el-form-item {
+            &__label {
+              line-height: inherit;
+              margin-bottom: var(--space-2);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

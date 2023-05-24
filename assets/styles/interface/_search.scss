@@ -1,0 +1,37 @@
+.search {
+  .el-input {
+    --el-input-border-radius: 12px;
+    --el-input-height: 48px;
+    &:not(.filled) {
+      .el-input {
+        &__clear {
+          display: none;
+        }
+      }
+    }
+  }
+  .el-input-group {
+    &__append {
+      padding-right: calc(var(--space-1) - 1px);
+      .el-button {
+        .el-icon {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  &--small {
+    .el-input {
+      --el-input-height: 40px;
+    }
+    .el-input-group {
+      &__append {
+        .el-button {
+          .el-icon {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

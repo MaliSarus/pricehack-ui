@@ -1,0 +1,77 @@
+.el-checkbox {
+  --el-checkbox-font-size: 14px;
+  --el-checkbox-font-weight: var(--el-font-weight-primary);
+  --el-checkbox-text-color: var(--el-text-color-regular);
+  --el-checkbox-input-height: 24px;
+  --el-checkbox-input-width: 24px;
+  --el-checkbox-border-radius: var(--checkboxes-base-radius);
+  --el-checkbox-bg-color: var(--white-color);
+  --el-checkbox-disabled-border-color: var(--disabled-text-color);
+  --el-checkbox-disabled-input-fill: var(--disabled-bg-color);
+  --el-checkbox-disabled-icon-color: var(--disabled-text-color);
+  --el-checkbox-disabled-checked-input-fill: var(--disabled-bg-color);
+  --el-checkbox-disabled-checked-input-border-color: var(--disabled-text-color);
+  --el-checkbox-disabled-checked-icon-color: var(--disabled-text-color);
+  --el-checkbox-checked-text-color: var(--el-color-primary);
+  --el-checkbox-checked-input-border-color: var(--el-color-primary);
+  --el-checkbox-checked-bg-color: var(--accent1-primary-color);
+  --el-checkbox-checked-icon-color: var(--el-color-white);
+  --el-checkbox-input-border-color-hover: var(--el-color-primary);
+  height: auto;
+  white-space: normal;
+  input {
+    &:focus-visible {
+      + .el-checkbox {
+        &__inner {
+          --el-checkbox-input-border: 1px solid var(--text-primary-color);
+          outline: none;
+        }
+      }
+    }
+  }
+  &__inner {
+    &:active {
+      --el-checkbox-input-border: 1px solid var(--click-state-color);
+      border-color: var(--el-checkbox-input-border);
+    }
+    &::after {
+      box-sizing: content-box;
+      content: '';
+      border-width: 2px;
+      height: 11px;
+      left: 0;
+      top: -3px;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+      transform: rotate(45deg) scaleY(0);
+      width: 4px;
+    }
+  }
+  &__label {
+    padding-left: var(--space-3);
+  }
+  &.el-checkbox--large {
+    height: auto;
+    .el-checkbox__inner {
+      width: var(--el-checkbox-input-width);
+      height: var(--el-checkbox-input-height);
+    }
+  }
+  &.el-checkbox--small {
+    --el-checkbox-input-width: 20px;
+    --el-checkbox-input-height: 20px;
+    --el-checkbox-border-radius: 4px;
+
+    height: auto;
+    .el-checkbox__inner {
+      width: var(--el-checkbox-input-width);
+      height: var(--el-checkbox-input-height);
+      &::after {
+        width: 3px;
+        height: 9px;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.closable-tag {
+  --closable-tag__font-size: var(--text-m__font-size);
+  --closable-tag__font-weight: var(--text-m__font-weight);
+  --closable-tag__line-height: var(--text-m__line-height);
+  --closable-tag__color: var(--text-primary-color);
+  --closable-tag__bg-color: var(--bg-light-color);
+  --closable-tag__border-color: var(--accent2-secondary-color);
+  --closable-tag__border-radius: 10px;
+  --closable-tag__icon-size: 16px;
+  --closable-tag--hover__color: var(--text-primary-color);
+  --closable-tag--hover__border-color: var(--accent2-primary-color);
+
+  padding: calc(var(--space-2) - 1px) calc(var(--space-3) - 1px);
+  border: 1px solid var(--closable-tag__border-color);
+  border-radius: var(--closable-tag__border-radius);
+  font-size: var(--closable-tag__font-size);
+  font-weight: var(--closable-tag__font-weight);
+  line-height: var(--closable-tag__line-height);
+  color: var(--closable-tag__color);
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--closable-tag__bg-color);
+  cursor: pointer;
+  &:focus-visible,
+  &:hover {
+    border-color: var(--closable-tag--hover__border-color);
+    color: var(--closable-tag--hover__color);
+    outline: none;
+  }
+  .closable-tag {
+    &__close {
+      --el-button-text-color: var(--icons-color);
+      padding: 0;
+      border: 0;
+      margin-left: var(--space-3);
+      .el-icon {
+        font-size: var(--closable-tag__icon-size);
+      }
+    }
+  }
+  &--xs {
+    --closable-tag__font-size: var(--text-xs__font-size);
+    --closable-tag__font-weight: var(--text-xs__font-weight);
+    --closable-tag__line-height: var(--text-xs__line-height);
+    --closable-tag__border-radius: 6px;
+    --closable-tag__icon-size: 12px;
+
+    padding: calc(var(--space-1) - 1px) calc(6px - 1px);
+    .closable-tag {
+      &__close {
+        margin-left: var(--space-1);
+      }
+    }
+  }
+  &--s {
+    --closable-tag__font-size: var(--text-s__font-size);
+    --closable-tag__font-weight: var(--text-s__font-weight);
+    --closable-tag__line-height: var(--text-s__line-height);
+    --closable-tag__border-radius: 8px;
+    --closable-tag__icon-size: 12px;
+
+    padding: calc(6px - 1px) calc(var(--space-2) - 1px);
+    .closable-tag {
+      &__close {
+        margin-left: var(--space-1);
+      }
+    }
+  }
+  &--plain {
+    --closable-tag__color: var(--text-secondary-color);
+    --closable-tag__bg-color: var(--bg-light-color);
+    --closable-tag__border-color: var(--dividers-color);
+    --closable-tag--hover__border-color: var(--disabled-text-color);
+    --closable-tag--hover__color: var(--text-secondary-color);
+  }
+}

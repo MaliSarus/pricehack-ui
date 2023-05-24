@@ -1,0 +1,5 @@
+:root {
+  @each $space, $value in $spaces {
+    --space-#{$space}: #{$value};
+  }
+}

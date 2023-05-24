@@ -1,0 +1,25 @@
+.el-rate {
+  --el-rate-height: 16px;
+  --el-rate-font-size: var(--el-font-size-base);
+  --el-rate-icon-size: 16px;
+  --el-rate-icon-margin: 4px;
+  --el-rate-void-color: var(--stroke-color);
+  --el-rate-fill-color: var(--attention-color);
+  --el-rate-disabled-void-color: var(--stroke-color);
+  --el-rate-text-color: var(--el-text-color-primary);
+  height: auto;
+  &--small {
+    --el-rate-icon-size: 12px;
+    --el-rate-icon-margin: 2px;
+  }
+  &--large {
+    --el-rate-icon-size: 24px;
+  }
+  .el-rate {
+    &__icon {
+      &.hover {
+        transform: none;
+      }
+    }
+  }
+}

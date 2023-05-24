@@ -1,0 +1,41 @@
+.el-avatar {
+  --el-avatar-text-color: var(--text-secondary-color);
+  --el-avatar-bg-color: var(--bg-light-color);
+  --el-avatar-text-size: 20px;
+  --el-avatar-icon-size: 24px;
+  --el-avatar-size: 48px;
+  border: 1px solid var(--stroke-color);
+  font-weight: 700;
+  line-height: 1;
+
+  &--xs {
+    --el-avatar-text-size: 16px;
+    --el-avatar-icon-size: 16px;
+    --el-avatar-size: 32px;
+  }
+  &--s {
+    --el-avatar-text-size: 16px;
+    --el-avatar-icon-size: 24px;
+    --el-avatar-size: 44px;
+  }
+  &--m {
+    --el-avatar-text-size: 20px;
+    --el-avatar-icon-size: 24px;
+    --el-avatar-size: 48px;
+  }
+  &--l {
+    --el-avatar-text-size: 24px;
+    --el-avatar-icon-size: 32px;
+    --el-avatar-size: 56px;
+  }
+  &--xl {
+    --el-avatar-text-size: 48px;
+    --el-avatar-icon-size: 52px;
+    --el-avatar-size: 92px;
+  }
+  &--xxl {
+    --el-avatar-text-size: 104px;
+    --el-avatar-icon-size: 120px;
+    --el-avatar-size: 180px;
+  }
+}

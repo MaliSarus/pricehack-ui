@@ -1,0 +1,12 @@
+@use 'sass:map';
+$base-space: 4px;
+$spaces: ();
+
+@for $i from 1 through 10 {
+  @if ($i <= 6) {
+    $spaces: map.set($spaces, #{$i}, ($base-space * $i));
+  } @else {
+    $spaces: map.set($spaces, #{$i}, ($base-space * $i + $base-space * ($i - 6)));
+  }
+};
+

@@ -1,0 +1,8 @@
+.closable-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--space-2) / 2 * -1);
+  .closable-tag {
+    margin: calc(var(--space-2) / 2);
+  }
+}

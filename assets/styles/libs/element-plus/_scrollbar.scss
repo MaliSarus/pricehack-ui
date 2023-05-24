@@ -1,0 +1,11 @@
+.el-scrollbar {
+  --el-scrollbar-opacity: 1;
+  --el-scrollbar-bg-color: var(--dividers-color);
+  --el-scrollbar-hover-opacity: 1;
+  --el-scrollbar-hover-bg-color: var(--accent1-tertiary-color);
+  &__thumb {
+    &:active {
+      background-color: var(--accent1-secondary-color);
+    }
+  }
+}

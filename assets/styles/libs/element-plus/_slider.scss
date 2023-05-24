@@ -1,0 +1,53 @@
+.el-slider {
+  --el-slider-main-bg-color: var(--accent1-primary-color);
+  --el-slider-runway-bg-color: var(--stroke-color);
+  --el-slider-stop-bg-color: var(--el-color-white);
+  --el-slider-disabled-color: var(--el-text-color-placeholder);
+  --el-slider-border-radius: 4px;
+  --el-slider-height: 2px;
+  --el-slider-button-size: 20px;
+  --el-slider-button-wrapper-size: 20px;
+  --el-slider-button-wrapper-offset: -10px;
+  height: var(--el-slider-button-size);
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    height: var(--el-slider-height);
+    width: 10px;
+    background-color: var(--el-slider-runway-bg-color);
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    content: '';
+    border-radius: var(--el-slider-border-radius);
+  }
+  &::before {
+    left: -10px;
+  }
+  &::after {
+    right: -10px;
+  }
+  &:hover {
+    --el-slider-main-bg-color: var(--hover-state-color);
+  }
+  &__bar {
+    transition: left 0.1s, width 0.1s, right 0.1s;
+  }
+  &__button-wrapper {
+    transition: left 0.1s;
+  }
+  &__button {
+    border: 1px solid var(--el-slider-main-bg-color);
+    &.dragging,
+    &.hover,
+    &:hover {
+      transform: none;
+    }
+  }
+}

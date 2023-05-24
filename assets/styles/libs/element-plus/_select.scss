@@ -1,0 +1,58 @@
+.el-select {
+  --el-select-border-color-hover: var(--el-border-color-hover);
+  --el-select-disabled-border: var(--el-disabled-border-color);
+  --el-select-font-size: var(--el-font-size-base);
+  --el-select-close-hover-color: var(--el-text-color-secondary);
+  --el-select-input-color: var(--el-text-color-placeholder);
+  --el-select-multiple-input-color: var(--el-text-color-regular);
+  --el-select-input-focus-border-color: var(--el-color-primary);
+  --el-select-input-font-size: 14px;
+  &:hover {
+    &:not(.el-select--disabled) {
+      .el-input {
+        &__wrapper {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .el-input {
+    --el-input-border-radius: var(--buttons-big-radius);
+    &.is-focus {
+      .el-input {
+        &__wrapper {
+          box-shadow: none !important;
+        }
+      }
+    }
+    &__wrapper {
+      &.is-focus {
+        box-shadow: none !important;
+      }
+    }
+    .el-select {
+      &__caret {
+        color: var(--icons-color);
+        font-size: 16px;
+      }
+    }
+  }
+  &__popper {
+    --el-popper-border-radius: var(--buttons-big-radius);
+    &.el-popper {
+      border-color: var(--stroke-color);
+      box-shadow: var(--shadow-s);
+      &[data-popper-placement^='bottom'] {
+        margin-top: -4px;
+      }
+      .el-popper {
+        &__arrow {
+          display: none;
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

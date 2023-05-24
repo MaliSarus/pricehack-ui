@@ -1,0 +1,22 @@
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+  @each $color-key, $color-value in $color-system {
+    --#{$color-key}-color: #{$color-value};
+    --#{$color-key}-color--rgb: #{HexToRGB($color-value)};
+  }
+}
+
+@each $color-key, $color-value in $color-system {
+  .color_#{$color-key} {
+    color: var(--#{$color-key}-color);
+  }
+  .bg-color_#{$color-key} {
+    background-color: var(--#{$color-key}-color);
+  }
+}
+
+.bg-color_transparent {
+  background-color: rgba(white, 0);
+}

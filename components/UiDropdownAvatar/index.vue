@@ -5,7 +5,6 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import { UiAvatar } from '@/custom-components/UI';
 import { ArrowDownIcon12 } from '@/assets/icons';
 defineProps<{
   user: {

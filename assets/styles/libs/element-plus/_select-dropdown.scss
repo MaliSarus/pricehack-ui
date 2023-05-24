@@ -1,0 +1,19 @@
+.el-select-dropdown {
+  padding: var(--space-2) var(--space-1);
+  &__list {
+    // margin: 0 var(--space-1) !important;
+  }
+  &__item {
+    font-size: var(--text-m__font-size);
+    padding: var(--space-3);
+    color: var(--text-secondary-color);
+    height: auto;
+    line-height: var(--text-m__line-height);
+    font-weight: var(--text-m__font-weight);
+    border-radius: calc(var(--buttons-big-radius) - var(--space-1));
+    &.hover,
+    &:hover {
+      background-color: var(--accent1-five-color);
+    }
+  }
+}

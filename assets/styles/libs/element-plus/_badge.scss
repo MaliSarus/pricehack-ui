@@ -1,0 +1,46 @@
+.el-badge {
+  --el-badge-bg-color: var(--icons-color);
+  --el-badge-radius: 4px;
+  --el-badge-font-size: var(--text-xs-semibold__font-size);
+  --el-badge-size: auto;
+  &__content {
+    padding: calc(var(--space-1) / 2 - 1px) calc(var(--space-1) - 1px);
+    line-height: var(--text-xs-semibold__line-height);
+    font-weight: var(--text-xs-semibold__font-weight);
+    border-color: var(--el-badge-bg-color);
+    &--danger {
+      --el-badge-bg-color: var(--accent2-primary-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--success {
+      --el-badge-bg-color: var(--successful-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--warning {
+      --el-badge-bg-color: var(--attention-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--error {
+      --el-badge-bg-color: var(--error-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--info {
+      --el-badge-bg-color: var(--accent1-primary-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--primary {
+      --el-badge-bg-color: var(--icons-color);
+      background-color: var(--el-badge-bg-color);
+    }
+    &--plain {
+      --el-badge-bg-color: var(--white-color);
+      background-color: var(--el-badge-bg-color);
+      border-color: var(--dividers-color);
+      color: var(--disabled-text-color);
+    }
+    &.is-dot{
+      width: 4px;
+      height: 4px;
+    }
+  }
+}

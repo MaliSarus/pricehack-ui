@@ -1,0 +1,91 @@
+.el-form-item {
+  margin: 0;
+  &.is-error {
+    .el-input {
+      --el-input-bg-color: var(--error-tertiary-color);
+      --el-input-text-color: var(--text-tertiary-color);
+      &__wrapper {
+        box-shadow: none;
+        border-color: var(--error-color);
+      }
+    }
+
+    .el-input-group {
+      &__append,
+      &__prepend {
+        border-color: var(--error-color);
+        background-color: var(--el-input-bg-color);
+        color: var(--icons-color);
+      }
+    }
+    .el-form-item {
+      &__subtext {
+        display: none;
+      }
+    }
+    .el-select-v2__wrapper,
+    .el-textarea__inner {
+      &,
+      &:focus {
+        --el-input-bg-color: var(--error-tertiary-color);
+        --el-input-text-color: var(--text-tertiary-color);
+        box-shadow: none;
+        border-color: var(--error-color);
+      }
+    }
+    .el-select {
+      .el-input {
+        .el-select {
+          &__caret {
+            color: var(--error-color);
+          }
+        }
+      }
+    }
+    .el-checkbox {
+      --el-checkbox-text-color: var(--error-color);
+      &__label {
+        * {
+          color: inherit;
+        }
+      }
+    }
+  }
+  .el-form-item {
+    &__label {
+      font-weight: var(--text-m-semibold__font-weight);
+      line-height: var(--text-m-semibold__line-height);
+    }
+  }
+  &__subtext {
+    flex-basis: 100%;
+    color: var(--text-tertiary-color);
+    font-weight: var(--text-xs__font-weight);
+    font-size: var(--text-xs__font-size);
+    line-height: var(--text-xs__line-height);
+    padding-top: var(--space-2);
+  }
+  &__error {
+    flex-basis: 100%;
+    color: var(--error-color);
+    font-weight: var(--text-xs__font-weight);
+    font-size: var(--text-xs__font-size);
+    line-height: var(--text-xs__line-height);
+    padding-top: var(--space-2);
+    position: static;
+    top: 100%;
+    left: 0;
+  }
+  &__label {
+    color: var(--text-tertiary-color);
+  }
+  &--small {
+    --font-size: var(--text-s-semibold__font-size);
+    .el-form-item {
+      &__label {
+        font-weight: var(--text-s-semibold__font-weight);
+        line-height: var(--text-s-semibold__line-height);
+      }
+    }
+  }
+}
