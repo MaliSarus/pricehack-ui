@@ -1,42 +1,9 @@
-# Nuxt 3 Minimal Starter
+# Подмодуль UI для проектов Sellerhack и Pricehack
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Подмодуль pricehack-ui является отдельным малым nuxt-проектом со storybook + vite.
 
-## Setup
-
-Make sure to install the dependencies:
+Если нужно будет создать новый UI-компонент и провести его интеграцию со storybook, то данную процедуру нужно выполнять при dev режиме storybook'a
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+npm run storybook
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
