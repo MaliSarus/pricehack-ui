@@ -36,7 +36,7 @@ const handleChangePage = (event: PageState) => {
       :page-link-size="4"
       :total-records="totalPages"
       template="PrevPageLink PageLinks NextPageLink"
-      class="hidden-sm-and-up"
+      class="d-md-none"
       @page="handleChangePage"
     >
       <template #prevpagelinkicon>
@@ -55,7 +55,7 @@ const handleChangePage = (event: PageState) => {
       :prev-icon="ArrowLeftIcon16"
       :next-icon="ArrowRightIcon16"
       :pager-count="6"
-      class="hidden-sm-only"
+      class="hidden-md-and-down"
     />
   </div>
 </template>

@@ -1,0 +1,16 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "vite-svg-loader",
+      // "element-plus/global"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "node_modules/**/*.vue",
+    "*.test.ts",
+    "**/*.stories.ts",
+  ]
+}

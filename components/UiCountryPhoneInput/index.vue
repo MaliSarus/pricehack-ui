@@ -4,6 +4,7 @@ export default {
 };
 </script>
 <script setup lang="ts">
+import { CountryPhoneCode } from "@/shared/typicode";
 import { Countries } from "@/assets/libs";
 import { computed, ref } from "vue";
 import IMask from "imask";
