@@ -95,7 +95,7 @@ $text: (
       'font-size': 12px,
       'line-height': 16px
     ),
-    'xs-semibold': (
+    'xs-medium': (
       'font-weight': 500,
       'font-size': 12px,
       'line-height': 16px
@@ -105,8 +105,13 @@ $text: (
       'font-size': 14px,
       'line-height': 18px
     ),
-    's-semibold': (
+    's-medium': (
       'font-weight': 500,
+      'font-size': 14px,
+      'line-height': 18px
+    ),
+    's-semibold': (
+      'font-weight': 600,
       'font-size': 14px,
       'line-height': 18px
     ),
@@ -115,8 +120,13 @@ $text: (
       'font-size': 16px,
       'line-height': 20px
     ),
-    'm-semibold': (
+    'm-medium': (
       'font-weight': 500,
+      'font-size': 16px,
+      'line-height': 20px
+    ),
+    'm-semibold': (
+      'font-weight': 600,
       'font-size': 16px,
       'line-height': 20px
     ),
@@ -125,8 +135,13 @@ $text: (
       'font-size': 18px,
       'line-height': 24px
     ),
-    'l-semibold': (
+    'l-medium': (
       'font-weight': 500,
+      'font-size': 18px,
+      'line-height': 24px
+    )
+    'l-semibold': (
+      'font-weight': 600,
       'font-size': 18px,
       'line-height': 24px
     )
